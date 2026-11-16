@@ -1,5 +1,5 @@
 # Hankel DMD for PTFV — verification toolkit
-
+Author: Dhakshini Subramanian
 System identification for the morphing-grid PTFV project (Kueh Tat Yin, Monash).
 Everything is checked against synthetic data **with a known answer** before being
 used on real wind-tunnel data.
