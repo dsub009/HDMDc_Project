@@ -1,0 +1,81 @@
+Runs used: 144 of 152 (excluded: failed or voltage/deflection disagree)
+
+==============================================================================
+1. EFFECT OF GRID SETTING (morphing conditions only)
+==============================================================================
+[deflection RMS, whole run (mm)] does the grid setting matter?  (per station; p after Holm correction)
+  station  11.6: ANOVA p=0.0019, Kruskal p=0.0062 -> DIFFERENT   | 2mm=0.951, 3.5mm=0.988, 3mm=0.878, 4.5mm=1.07
+  station  17.2: ANOVA p=0.0019, Kruskal p=0.0062 -> DIFFERENT   | 2mm=0.638, 3.5mm=0.542, 3mm=0.641, 4.5mm=0.69
+  station  19.9: ANOVA p=0.0019, Kruskal p=0.0062 -> DIFFERENT   | 2mm=0.498, 3.5mm=0.504, 3mm=0.432, 4.5mm=0.607
+  station  22.8: ANOVA p=2.2e-05, Kruskal p=0.005 -> DIFFERENT   | 2mm=0.401, 3.5mm=0.399, 3mm=0.364, 4.5mm=0.466
+  station  25.5: ANOVA p=7.2e-05, Kruskal p=0.005 -> DIFFERENT   | 2mm=0.344, 3.5mm=0.37, 3mm=0.364, 4.5mm=0.396
+
+[damping ratio (HDMD, deflection)] does the grid setting matter?  (per station; p after Holm correction)
+  station  11.6: ANOVA p=1, Kruskal p=1 -> no evidence | 2mm=0.0494, 3.5mm=0.0528, 3mm=0.0525, 4.5mm=0.0512
+  station  17.2: ANOVA p=1, Kruskal p=0.44 -> no evidence | 2mm=0.0429, 3.5mm=0.05, 3mm=0.0448, 4.5mm=0.0416
+  station  19.9: ANOVA p=1, Kruskal p=1 -> no evidence | 2mm=0.0465, 3.5mm=0.052, 3mm=0.0544, 4.5mm=0.049
+  station  22.8: ANOVA p=1, Kruskal p=1 -> no evidence | 2mm=0.0488, 3.5mm=0.045, 3mm=0.0482, 4.5mm=0.046
+  station  25.5: ANOVA p=1, Kruskal p=1 -> no evidence | 2mm=0.0501, 3.5mm=0.0498, 3mm=0.0499, 4.5mm=0.0564
+
+[frequency (HDMD, deflection, Hz)] does the grid setting matter?  (per station; p after Holm correction)
+  station  11.6: ANOVA p=0.23, Kruskal p=0.27 -> no evidence | 2mm=48.7, 3.5mm=48.5, 3mm=49.3, 4.5mm=48.4
+  station  17.2: ANOVA p=0.23, Kruskal p=0.27 -> no evidence | 2mm=48.7, 3.5mm=49.5, 3mm=48.2, 4.5mm=49.3
+  station  19.9: ANOVA p=1, Kruskal p=0.95 -> no evidence | 2mm=49.9, 3.5mm=49.8, 3mm=49.9, 4.5mm=49.5
+  station  22.8: ANOVA p=9.4e-06, Kruskal p=0.0015 -> DIFFERENT   | 2mm=49.7, 3.5mm=51, 3mm=50.2, 4.5mm=50.4
+  station  25.5: ANOVA p=1, Kruskal p=0.95 -> no evidence | 2mm=50.8, 3.5mm=50.7, 3mm=50.5, 4.5mm=50.7
+
+[within-run change (2nd half / 1st half)] does the grid setting matter?  (per station; p after Holm correction)
+  station  11.6: ANOVA p=8.4e-13, Kruskal p=0.001 -> DIFFERENT   | 2mm=0.467, 3.5mm=0.843, 3mm=0.622, 4.5mm=1.34
+  station  17.2: ANOVA p=2.5e-14, Kruskal p=0.001 -> DIFFERENT   | 2mm=0.342, 3.5mm=0.796, 3mm=0.337, 4.5mm=1.36
+  station  19.9: ANOVA p=4e-12, Kruskal p=0.001 -> DIFFERENT   | 2mm=0.353, 3.5mm=0.828, 3mm=0.502, 4.5mm=1.43
+  station  22.8: ANOVA p=9.2e-08, Kruskal p=0.001 -> DIFFERENT   | 2mm=0.545, 3.5mm=0.87, 3mm=0.659, 4.5mm=1.23
+  station  25.5: ANOVA p=7.1e-09, Kruskal p=0.001 -> DIFFERENT   | 2mm=0.692, 3.5mm=0.914, 3mm=0.796, 4.5mm=1.19
+
+Same question using the LATE (settled, last 4 s) deflection RMS - see experiment 6:
+[deflection RMS, last 4 s (mm)] does the grid setting matter?  (per station; p after Holm correction)
+  station  11.6: ANOVA p=1e-12, Kruskal p=0.0013 -> DIFFERENT   | 2mm=0.498, 3.5mm=0.894, 3mm=0.645, 4.5mm=1.24
+  station  17.2: ANOVA p=1.3e-15, Kruskal p=0.00099 -> DIFFERENT   | 2mm=0.247, 3.5mm=0.437, 3mm=0.262, 4.5mm=0.82
+  station  19.9: ANOVA p=7.7e-10, Kruskal p=0.0013 -> DIFFERENT   | 2mm=0.229, 3.5mm=0.399, 3mm=0.26, 4.5mm=0.713
+  station  22.8: ANOVA p=3.2e-11, Kruskal p=0.0013 -> DIFFERENT   | 2mm=0.275, 3.5mm=0.342, 3mm=0.282, 4.5mm=0.512
+  station  25.5: ANOVA p=7.9e-08, Kruskal p=0.0013 -> DIFFERENT   | 2mm=0.279, 3.5mm=0.32, 3mm=0.316, 4.5mm=0.419
+
+==============================================================================
+2. BASELINE vs MORPHING SETTINGS AT (NEARLY) THE SAME STATION
+==============================================================================
+NOTE: Baseline was recorded in a different session (August) -> setup differences possible.
+  Baseline@17.15 (2.012 mm) vs 2mm@17.2 (0.638 mm): ratio 3.15, Welch p=0.007
+  Baseline@17.15 (2.012 mm) vs 3.5mm@17.2 (0.542 mm): ratio 3.71, Welch p=0.006
+  Baseline@17.15 (2.012 mm) vs 3mm@17.2 (0.641 mm): ratio 3.14, Welch p=0.007
+  Baseline@17.15 (2.012 mm) vs 4.5mm@17.2 (0.690 mm): ratio 2.91, Welch p=0.008
+  Baseline@25.5 (1.018 mm) vs 2mm@25.5 (0.344 mm): ratio 2.96, Welch p=9e-08
+  Baseline@25.5 (1.018 mm) vs 3.5mm@25.5 (0.370 mm): ratio 2.75, Welch p=3e-08
+  Baseline@25.5 (1.018 mm) vs 3mm@25.5 (0.364 mm): ratio 2.80, Welch p=6e-08
+  Baseline@25.5 (1.018 mm) vs 4.5mm@25.5 (0.396 mm): ratio 2.57, Welch p=2e-08
+
+==============================================================================
+3. DECAY WITH DISTANCE: deflection RMS ~ station^b
+==============================================================================
+  2mm      : b = -1.33   95% CI [-1.48, -1.26]
+  3.5mm    : b = -1.25   95% CI [-1.34, -1.13]
+  3mm      : b = -1.23   95% CI [-1.39, -1.13]
+  4.5mm    : b = -1.24   95% CI [-1.33, -1.17]
+  Baseline : b = -1.61   95% CI [-1.95, -1.26]
+
+==============================================================================
+4. FREQUENCY vs DEFLECTION AMPLITUDE
+==============================================================================
+  all runs: Spearman r = -0.86 (p=4e-43) - larger deflection, lower frequency
+  within station  11.6 only: r = -0.43 (p=0.052)
+  within station  17.2 only: r = -0.29 (p=0.17)
+  within station  19.9 only: r = -0.32 (p=0.14)
+  within station  22.8 only: r = -0.03 (p=0.89)
+  within station  25.5 only: r = -0.06 (p=0.79)
+  -> if the within-station correlations are weak, the overall link is mostly a
+     distance effect (both change with distance) rather than amplitude itself.
+
+==============================================================================
+5. METHOD CHECKS
+==============================================================================
+  run-to-run scatter of damping (median CV over 26 condition/station cells):
+    HDMD on deflection 16 %,  HDMD on voltage 19 %,  half-power 44 %
+  voltage vs deflection: frequency differs by 0.40 Hz on average (r = 0.94); damping r = 0.81
